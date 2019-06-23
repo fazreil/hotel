@@ -111,7 +111,50 @@ In the next few slides, we will discuss about the Hotel Class. This include some
 - show_customer
 - modify_customer_record
 
++++
+
+### Variables for Hotel class
+
+These are the variables for each of Hotel object
+```c
+int room_number;  //the number of the room, the key for referencing a customer, stored in an integer
+char name[30];    //name of the customer is defined in array of char
+char address[50]; //address of the customer is defined in array of char
+char phone[10];   //phone numeber of the customer is defined in array of char
+```
+
+the variables are accessible through getter functions
+
++++
+
+### Getters
+
+All of the variables in previous slide have their own getters function.
+```c
+int getRoomNumber()
+{
+ return room_number;
+}
+char* getName()    // the asterisks are returning an array of the defined variable type
+{
+ return name;
+}
+char* getAddress()
+{
+ return address;
+}
+
+char* getPhone()
+{
+ return phone;
+}
+```
+Getters function gets the value for each hotel objects.
+
 ---
+
+### add_customer
+
 
 Q & A
 
