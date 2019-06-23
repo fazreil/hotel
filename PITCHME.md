@@ -59,20 +59,20 @@ void intro()
 {
      system("color 05");
      system("cls");
-  cout<<"\t\t\t\t*\t*";
-  cout<<"\t\t\t\t**\t**";
-   cout<<"\t\t\t\t***\t***";
-   cout<<"\t\t\t\t****\t****";
-   cout<<"\t\t\t\t*****\t*****";
-    cout<<"\t\t\t\t******\t******";
-   cout<<"\t\t\t\t*******\t*******";
-   cout<<"\t\t\t\t*******\t*******";
-   cout<<"\t\t\t\t******\t******";
-   cout<<"\t\t\t\t*****\t*****";
-   cout<<"\t\t\t\t****\t****";
-   cout<<"\t\t\t\t***\t***";
-   cout<<"\t\t\t\t**\t**";
-   cout<<"\t\t\t\t*\t*";
+     cout<<"\t\t\t\t*\t*";
+     cout<<"\t\t\t\t**\t**";
+     cout<<"\t\t\t\t***\t***";
+     cout<<"\t\t\t\t****\t****";
+     cout<<"\t\t\t\t*****\t*****";
+     cout<<"\t\t\t\t******\t******";
+     cout<<"\t\t\t\t*******\t*******";
+     cout<<"\t\t\t\t*******\t*******";
+     cout<<"\t\t\t\t******\t******";
+     cout<<"\t\t\t\t*****\t*****";
+     cout<<"\t\t\t\t****\t****";
+     cout<<"\t\t\t\t***\t***";
+     cout<<"\t\t\t\t**\t**";
+     cout<<"\t\t\t\t*\t*";
 }```
 
 - clears the screen by calling "cls" command in from the system
@@ -170,26 +170,94 @@ price = 200;
 totalprice = price*rooms*night;
 ```
 
+totalprice is then shown to the user.
+
 +++
 
 ### add_customer
 
 The function then asks the user to input their details to store as a hotel object
 
+```c
+  cout<<"\nEnter The Room Number: ";
+  cin>>room_number;
+
+  cout<<"\nEnter The Customer's name: ";
+  cin.ignore();
+  cin.getline(name,30);
+
+  cout<<"\nEnter The Customer's address: ";
+  cin.ignore();
+  cin.getline(address,50);
+
+  cout<<"\nEnter The Customer's phone #: ";
+  cin.ignore();
+  cin.getline(phone,10);
+```
+
+for each cin.getline a property of hotel is brought together to store as one of hotel property, the second argument is the size of input allowed.
+
 +++
 
 ### show_customer
+
+show_customer function is similar to display functions where it retrieve the variables and display them on the console
+
+```c
+void show_customer()
+{
+  cout<<"\nRoom Number: "<<room_number;
+  cout<<"\nCustomer's Name: "<<name;
+  cout<<"\nCustomer's Address: "<<address;
+  cout<<"\nCustomer's Phone: "<<phone;
+}
+```
 
 +++
 
 ### modify_customer_record
 
----
+modify_customer_record overwrites the customer record as saved in the hotel object.
 
-Q & A
+```c
+void modify_customer_record()
+{
+  cout<<"\nRoom number : "<<room_number;
+  cout<<"\nModify Customer's Name : ";
+  cin.ignore();
+  cin.getline(name,30);
+  cout<<"\nModify Customer's address: ";
+  cin.ignore();
+  cin.getline(address,50);
+  cout<<"\nModify Customer's phone #: ";
+  cin.ignore();
+  cin.getline(phone,10);
+}
+```
+
+The program display the room number and asks the user to input the new customer details.
+
 
 +++
 
-Prepared by:
+### report function
+
+The report function displays the current value that each of the variable holds.
+The format of the display is indented by using setw()
+
+```c
+void report()   // format and display the current value for each variable
+{
+cout<<room_number<<setw(10)<<name<<setw(20)<<address<<setw(20)<<phone<<endl;
+}
+```
+
+---
+
+## Q & A
+
++++
+
+## Prepared by:
 
 ---
