@@ -86,7 +86,7 @@ Display functions retrieve data from Hotel Class and print them on the display
 
 Display functions are:
 - display_a_customer function
-  - r_number is passed as a parameter indicating the room owner
+  - r_number is passed as a parameter referencing the owner of the room
 - display_all_customer function
 - show_customer function
 
@@ -155,6 +155,36 @@ Getters function gets the value for each hotel objects.
 
 ### add_customer
 
+This function asks the user to input number of nights, type of room and number of rooms as variables and calculate the total price
+
+```c
+if (type==1)
+price = 100;
+
+else if(type==2)
+price = 150;
+
+else if (type==3)
+price = 200;
+
+totalprice = price*rooms*night;
+```
+
++++
+
+### add_customer
+
+The function then asks the user to input their details to store as a hotel object
+
++++
+
+### show_customer
+
++++
+
+### modify_customer_record
+
+---
 
 Q & A
 
