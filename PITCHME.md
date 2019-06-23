@@ -96,6 +96,8 @@ Display functions are:
 
 - modify_customer function
 
++++
+
 ### saving modification into database/file
 
 - save_customer function
