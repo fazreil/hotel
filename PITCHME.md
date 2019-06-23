@@ -29,6 +29,19 @@ The program as a whole consist of these items:
 
 ---
 
+### Header Files
+
+There are five header files being imported into the program
+
+```c
+#include<fstream>  //file stream manipulation library
+#include<conio.h>  //ms-dos console input output utility
+#include<string.h> //String manipulation utility
+#include<iomanip>  //manipulate the iostram objects
+#include<iostream> //input output stream library
+
+```
+
 ### the main program
 
 The main program is the program that will interact with the user. It will call the Hotel class from time to time to perform transaction regarding the Hotel management.
@@ -65,6 +78,14 @@ void intro()
 
 ---
 
+### Display functions
+
+Display functions retrieve data from Hotel Class and print them on the display
+
+Display functions are:
+- display_a_customer function
+- display_all_customer function
+
 ### The Hotel Class
 In the next few slides, we will discuss about the Hotel Class. This include some of the major context relevant to the program:
 
@@ -78,8 +99,6 @@ In the next few slides, we will discuss about the Hotel Class. This include some
 - display_a_customer function
 - modify_customer function
 - delete_customer function
-- display_all_customer function
-- intro function
 ---
 
 ## Header File Imports
