@@ -86,25 +86,28 @@ Display functions retrieve data from Hotel Class and print them on the display
 
 Display functions are:
 - display_a_customer function
-  - r_number is passed as a parameter indicating the room owner 
+  - r_number is passed as a parameter indicating the room owner
 - display_all_customer function
 - show_customer function
 
 +++
 
+### customer modifications
+
+- modify_customer function
+
+### saving modification into database/file
+
+- save_customer function
+
+---
+
 ### The Hotel Class
 In the next few slides, we will discuss about the Hotel Class. This include some of the major context relevant to the program:
 
-- Header files
-- main Class
-- main menu
 - add_customer
 - show_customer
 - modify_customer_record
-- save_customer function
-- display_a_customer function
-- modify_customer function
-- delete_customer function
 
 ---
 
