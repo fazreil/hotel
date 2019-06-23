@@ -96,11 +96,15 @@ Display functions are:
 
 - modify_customer function
 
+Modification of customer information is carried out in such way where the the file/database is read and overwritten. Hotel class function modify_customer_record is being called to perform modification.
+
 +++
 
 ### saving modification into database/file
 
 - save_customer function
+
+Save customer function provide the user with utility to add more customers. By doing so, it open the file/database and insert customer information. Hotel class function add_customer is called to create the data before inserting into the file/database.
 
 ---
 
