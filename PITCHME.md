@@ -1,6 +1,6 @@
 ---
 
-# Hotel Management Program
+# Hotel Mgmt Program
 
 ---
 
@@ -41,6 +41,8 @@ There are five header files being imported into the program
 #include<iostream> //input output stream library
 
 ```
+
++++
 
 ### the main program
 
@@ -84,7 +86,11 @@ Display functions retrieve data from Hotel Class and print them on the display
 
 Display functions are:
 - display_a_customer function
+  - r_number is passed as a parameter indicating the room owner 
 - display_all_customer function
+- show_customer function
+
++++
 
 ### The Hotel Class
 In the next few slides, we will discuss about the Hotel Class. This include some of the major context relevant to the program:
@@ -99,12 +105,13 @@ In the next few slides, we will discuss about the Hotel Class. This include some
 - display_a_customer function
 - modify_customer function
 - delete_customer function
+
 ---
 
-## Header File Imports
+Q & A
 
 +++
 
-There are several header files being imported for the program
+Prepared by:
 
-+++
+---
