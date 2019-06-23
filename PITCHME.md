@@ -39,7 +39,8 @@ the main program handles the introduction, the menu for the user and also provid
 
 ### introduction function
 
-```void intro()
+```c
+void intro()
 {
      system("color 05");
      system("cls");
