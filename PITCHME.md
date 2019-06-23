@@ -100,11 +100,50 @@ Modification of customer information is carried out in such way where the the fi
 
 +++
 
+### customer modification
+
+the lines below opens up the hotel.dat which stores the customer information and perform modification
+
+```c
+fp.open("hotel.dat",ios::in|ios::out);
+while(fp.read((char*)&h,sizeof(Hotel)) && found==0)
+{
+          if(h.getRoomNumber()==r_number)
+          {
+                     h.show_customer();
+                     cout<<"\nEnter Customer's new information"<<endl;
+                     h.modify_customer_record();
+                     int pos=-1*sizeof(h);
+                    fp.seekp(pos,ios::cur);
+                    fp.write((char*)&h,sizeof(Hotel));
+                    cout<<"\n\n\t Record Updated Successfully...";
+                    found=1;
+          }
+}
+fp.close();
+```
+
++++
+
 ### saving modification into database/file
 
 - save_customer function
 
 Save customer function provide the user with utility to add more customers. By doing so, it open the file/database and insert customer information. Hotel class function add_customer is called to create the data before inserting into the file/database.
+
++++
+
+### saving modification into database/file
+
+the lines below opens up the hotel.dat which opens ip hotel.dat and write new customer information
+
+```c
+fp.open("hotel.dat",ios::out|ios::app);
+do
+{
+  h.add_customer();
+  fp.write((char*)&h,sizeof(Hotel));
+```
 
 ---
 
